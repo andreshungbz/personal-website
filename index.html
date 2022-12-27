@@ -4,35 +4,57 @@
     <!-- Meta data -->
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
-    <meta name="description" content="Introductory content and contact links">
+    <meta name="description" content="About me page">
     <meta name="author" content="Andres Hung">
-    <!-- Roboto font from Google Fonts -->
+    <!-- Roboto and Ubuntu fonts from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- My style sheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- My style sheet and links -->
     <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/warwick.png">
     <title>Andres Hung</title>
   </head>
   <body>
-    <header>
-      <h1>Andres Hung</h1>
-      <p>Student | Artist</p>
-    </header>
-    <nav>
-      <ul>
-        <li><a>About</a></li>
-        <li><a>Hobbies</a></li>
-        <li><a>Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </main>
-    <footer>
-      <address>
-        Belmopan | Belize
-      </address>
-    </footer>
+    <div class="main">
+      <!-- Header -->
+      <header>
+        <h1>Andres Hung</h1>
+        <p>Belizean Student and Artist</p>
+      </header>
+      <!-- Navigation bar -->
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li class="right"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Main content -->
+      <main>
+        <section class="clearfix">
+          <h2>About Me</h2>
+          <img class="pfp" src="/images/warwick.png" alt="Placeholder icon" style="height: 175px; width: 175px">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+        <section class="clearfix">
+          <h2>Current Plan</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <small>
+          <ul>
+            <li><a href="https://github.com/andreshungbz">GitHub</a></li>
+            <li><a href="https://twitter.com/andreshungbz">Twitter</a></li>
+            <li><a href="https://www.facebook.com/andres.hung.bz/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/andres.hung.belize/">Instagram</a></li>
+          </ul>
+        </small>
+      </footer>
+    </div>
   </body>
 </html>

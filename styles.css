@@ -1,8 +1,104 @@
-* {
-    box-sizing: border-box;
+/* Global */
+* {box-sizing: border-box;}
+body {
+    background-image: linear-gradient(to top right, #9e2fff, #ffa21f);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.main {
+    width: 95%;
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #f4faff;
+    box-shadow: -12px 12px rgba(0, 0, 0, 0.25);
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #b9d6f2;
+/* Header section */
+header {
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #061a40;
+    color: #ffffff;
+    border-bottom: 5px solid #0353a4;
+}
+header h1 {margin-bottom: -10px;}
+
+/* Navigation bar */
+nav ul {
+    background-color: #006daa;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {float: left;}
+nav li.right {float: right;}
+nav li a {
+    display: block;
+    color: #b9d6f2;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+nav li a:hover, nav li a:active {background-color: #0086d4;}
+/* Collapse navigation bar */
+@media screen and (max-width: 385px) {
+    nav ul li, nav ul li.right {
+        float: none;
+        border-bottom: 2px solid #0086d4;
+    }
+    h2 {text-align: center;}
+}
+
+/* Main section */
+section p {font-family: 'Ubuntu', sans-serif;}
+section {
+    padding: 0 5%;
+    margin-bottom: 10px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Footer section */
+footer {
+    padding: 5px 0;
+    margin-bottom: 15px;;
+    background-color: #003559;
+    color:#ffffff;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+footer li {
+    display: inline-block;
+    margin-right: 15px;
+}
+footer li:last-child {margin-right: 0;}
+footer a {text-decoration: none;}
+footer a:visited {color: #b9d6f2;}
+footer a:hover {color: #0086d4;}
+footer a:active {color: #f4faff;}
+
+/* Page specifics */
+/* About Me */
+.pfp {
+    display: inline-block;
+    float: left;
+    margin: 0 15px 15px 0;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 385px) {
+    .pfp {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
 }
