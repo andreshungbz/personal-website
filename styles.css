@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 .main {
-    width: 95%;
+    width: 90%;
     max-width: 850px;
     margin: 15px auto;
     background-color: #f4faff;
@@ -47,7 +47,7 @@ nav li a {
 }
 nav li a:hover, nav li a:active {background-color: #0086d4;}
 /* Collapse navigation bar */
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 500px) {
     nav ul li, nav ul li.right {
         float: none;
         border-bottom: 2px solid #0086d4;
@@ -86,7 +86,10 @@ footer li {
     margin-right: 15px;
 }
 footer li:last-child {margin-right: 0;}
-footer a {text-decoration: none;}
+footer a {
+    text-decoration: none;
+    color: #b9d6f2;
+}
 footer a:visited {color: #b9d6f2;}
 footer a:hover {color: #0086d4;}
 footer a:active {color: #f4faff;}
@@ -98,7 +101,7 @@ footer a:active {color: #f4faff;}
     margin: 0 15px 15px 0;
     box-shadow: -5px 5px rgba(0, 0, 0, 0.25);
 }
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 500px) {
     .pfp {
         display: block;
         float: none;
@@ -124,7 +127,7 @@ footer a:active {color: #f4faff;}
     max-width: 150px;
     height: auto;
 }
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 500px) {
     .showcase {
         display: block;
         float: none;
@@ -157,4 +160,51 @@ footer a:active {color: #f4faff;}
     max-width: 230px;
     height: auto;
     object-fit: cover;
+}
+
+/* Contact page */
+form {
+    width: 100%;
+    max-width: 600px;
+    padding-bottom: 2em;
+    margin: 0 auto;
+}
+fieldset {
+    padding: 0.75rem 10px;
+    margin-bottom: 20px;
+    border: 2px dotted #b9d6f2;
+}
+legend {
+    color: #0353a4;
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+input, select, textarea {
+    margin-top: 10px;
+    width: 100%;
+    min-width: 2em;
+    padding: 5px;
+    border: 1px solid #b9d6f2;
+    border-radius: 3px;
+}
+textarea {
+    font-family: inherit;
+    resize: vertical;
+}
+input[type="file"] {
+    padding: 5px;
+    background-color: rgb(247, 252, 255);
+}
+input[type="submit"] {
+    display: block;
+    width: 50%;
+    background-color: #0086d4;
+    font-size: 1em;
+    color: #f4faff;
+    border: none;
+    box-shadow: -3px 3px #b9d6f2;
+    margin: 0.5em auto;
 }
